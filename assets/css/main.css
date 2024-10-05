@@ -487,6 +487,12 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.footer .social-links {
+  display: flex;
+  justify-content: center; /* Memastikan icon berada di tengah */
+  gap: 10px; /* Menambahkan jarak antar icon */
+}
+
 .footer .social-links a {
   display: flex;
   align-items: center;
@@ -497,9 +503,9 @@ h6 {
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-right: 10px;
   transition: 0.3s;
 }
+
 
 .footer .social-links a:hover {
   color: var(--accent-color);
@@ -827,6 +833,22 @@ section,
 .hero .info .btn-get-started:hover {
   background: var(--accent-color);
 }
+
+.btn-get-started-new {
+  background-color: #feb902; /* Ganti dengan warna yang diinginkan */
+  color: #fff; /* Warna teks */
+  border: none; /* Jika tidak ingin ada border */
+  padding: 10px 20px; /* Padding untuk tampilan lebih baik */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+  text-decoration: none; /* Menghilangkan garis bawah pada teks */
+  display: inline-block; /* Menjadikan tombol inline-block */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.btn-get-started-new:hover {
+  color: #060606;
+}
+
 
 .hero .carousel {
   inset: 0;
